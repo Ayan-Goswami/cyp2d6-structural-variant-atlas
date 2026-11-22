@@ -1,0 +1,12 @@
+name: pymol-atlas
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pymol-open-source
+  - pandas
+  - numpy
+  - matplotlib
+  - biopython
+  - requests
+  - jupyterlab
