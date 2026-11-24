@@ -1,0 +1,22 @@
+allele,hgvs_c,protein_change,rsid,variant_type,function,freq_sas,freq_source,source_url,date_accessed,notes
+*2,c.886C>T,R296C,rs16947,missense,normal function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Shared backbone missense variant in *2 and multiple other star alleles
+*2,c.1457G>C,S486T,rs1135840,missense,normal function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Common C-terminal backbone missense variant in *2 and multiple other alleles
+*33,c.709G>T,A237S,rs28371717,missense,normal function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Core defining missense variant of *33
+*35,c.31G>A,V11M,rs769258,missense,normal function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Core defining variant of *35 (co-occurs with R296C and S486T); sits in N-terminal anchor unresolved in 2F9Q
+*10,c.100C>T,P34S,rs1065852,missense,decreased function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Core defining variant of *10 (co-occurs with S486T); CPIC activity value 0.25
+*14,c.505G>A,G169R,rs5030865,missense,decreased function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Core defining variant of *14 (co-occurs with R296C and S486T); c.505G>T causes nonsense in *8
+*17,c.320C>T,T107I,rs28371706,missense,decreased function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Core defining variant of *17 (co-occurs with R296C and S486T)
+*29,c.406G>A,V136I,rs61736512,missense,decreased function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Core variant of *29 (requires c.408G>C rs1058164 in cis; co-occurs with V338M R296C and S486T)
+*29,c.1012G>A,V338M,rs59421388,missense,decreased function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Core variant of *29 (co-occurs with V136I R296C and S486T)
+*49,c.358T>A,F120I,rs1135822,missense,decreased function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Core defining variant of *49 (co-occurs with P34S and S486T)
+*7,c.971A>C,H324P,rs5030867,missense,no function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Core defining missense variant of *7
+*12,c.124G>A,G42R,rs5030862,missense,no function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Core defining missense variant of *12 (co-occurs with R296C and S486T)
+*31,c.1319G>A,R440H,rs267608319,missense,no function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Core defining missense variant of *31 (co-occurs with R296C and S486T); adjacent to heme-binding loop
+*22,c.82C>T,R28C,rs138100349,missense,unknown function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,CPIC uncertain function mapped to unknown function; sits in N-terminal anchor unresolved in 2F9Q
+*25,c.1027C>G,R343G,rs267608295,missense,unknown function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,CPIC uncertain function mapped to unknown function
+*3,c.775del,R259Gfs,rs35742686,frameshift,no function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Non-mappable frameshift truncation; cannot be represented as a single residue substitution
+*4,c.506-1G>A,splice,rs3892097,splice,no function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Non-mappable canonical splice-acceptor defect causing frameshift (often co-occurs with P34S and S486T)
+*5,N/A,deletion,,deletion,no function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Non-mappable whole-gene deletion of CYP2D6; no protein product
+*6,c.454del,W152Gfs,rs5030655,frameshift,no function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Non-mappable frameshift truncation; cannot be represented as a single residue substitution
+*9,c.841_843del,K281del,rs5030656,inframe,decreased function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,In-frame single-residue deletion; excluded from single-substitution regex per Day 5 workflow
+*41,c.985+39G>A,splice,rs28371725,splice,decreased function,,,https://www.pharmvar.org/gene/CYP2D6,2026-11-24,Non-mappable intronic splicing defect reducing functional transcript (co-occurs with R296C and S486T)
