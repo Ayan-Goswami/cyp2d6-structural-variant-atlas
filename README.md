@@ -77,7 +77,7 @@ In the SG10K_Health Indian WGS cohort (`N = 328`; Maulana et al., 2024), three m
 
 ### 1. Clone and Create the Environment
 ```bash
-git clone [https://github.com/Ayan-Goswami/cyp2d6-structural-variant-atlas.git](https://github.com/Ayan-Goswami/cyp2d6-structural-variant-atlas.git)
+git clone https://github.com/Ayan-Goswami/cyp2d6-structural-variant-atlas.git
 cd cyp2d6-structural-variant-atlas
 mamba env create -f environment.yml
 conda activate pymol-atlas
