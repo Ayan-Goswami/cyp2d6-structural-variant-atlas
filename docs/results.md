@@ -36,3 +36,24 @@ Local 5.0 A heavy-atom environments and candidate polar contacts (N/O pairs <= 3
 - **Structural interpretation:** Positioned near the N-terminal end of the I-helix, distal to the catalytic heme iron; serves as a tolerated normal-function backbone control shared across multiple star alleles.
 
 > **Illustrative Mutagenesis Caveat:** Side-by-side wild-type vs. mutant figures (`figures/closeups/mutagenesis_R440H.png`, `mutagenesis_F120I.png`, `mutagenesis_H324P.png`) were generated using PyMOL's Mutagenesis Wizard (backbone-dependent rotamer selection with minimal steric clashes). These views are strictly illustrative—no energy minimization, backbone relaxation, or folding free-energy ($\Delta\Delta G$) calculation was performed.
+
+## Day 11: Quantitative Structural & Conservation Summary (2026-11-26)
+
+Quantitative metrics were summarized across the **12 missense variants resolved in PDB `2F9Q` Chain A** (`figures/summary_structural_metrics.png`), alongside South Asian allele frequency context contrasting 3D-mappable and non-mappable star alleles (`figures/summary_sas_frequencies.png`). Three missense variants—`V11M` (`*35`, normal), `R28C` (`*22`, unknown), and `G42R` (`*12`, no function)—fall in regions unresolved in `2F9Q` Chain A and were excluded from 3D coordinate calculations while retaining their sequence-conservation scores.
+
+### Summary Metrics by CPIC Clinical Function Class (`2F9Q` Chain A, n = 12)
+
+| CPIC Function Class | Mapped n | Heme Fe Distance Median [Range] (A) | Relative SASA Median [Range] | CYP2D-Family Entropy Median [Range] (bits) |
+| :--- | :---: | :---: | :---: | :---: |
+| No function | 2 | 18.18 [11.31–25.04] | 0.32 [0.24–0.40] | 0.681 [0.530–0.832] |
+| Decreased function | 6 | 22.43 [5.91–32.52] | 0.24 [0.18–0.38] | 0.439 [0.000–2.084] |
+| Normal function | 3 | 15.75 [15.10–25.69] | 0.21 [0.19–0.30] | 1.509 [0.957–1.986] |
+| Unknown / uncertain (`*25` R343G) | 1 | 26.52 [26.52–26.52] | 0.32 [0.32–0.32] | 0.439 [0.439–0.439] |
+
+### Key Observations
+- **Evolutionary constraint separates clinical classes more cleanly than 3D distance alone:** Normal-function variants occupy more variable positions across the mammalian CYP2D family (median entropy `1.509` bits), whereas decreased-function (`0.439` bits, including a 100% conserved position at `0.000` bits) and no-function (`0.681` bits) variants sit at more conserved sites.
+- **Impaired function arises via multiple structural mechanisms, not only heme contact:** While active-site (`5.91 A`) and proximal heme-loop (`11.31 A`, `R440H`) variants lie near the cofactor, other loss- and reduced-function variants lie >20 A away (e.g., `H324P` at `25.04 A`), where helical disruption or folding instability rather than direct heme contact drives functional loss. Accordingly, median heme distance does not separate clinical classes monotonically.
+- **Solvent accessibility overlaps across classes:** Median `rel_sasa` values are closely clustered (`0.21–0.32`), reinforcing that local stereochemistry (such as proline insertion or proximal-loop electrostatics) and sequence conservation provide stronger mechanistic context than simple burial depth.
+- **Uncertain-function variant note (`*25` `R343G`):** Although distal to the heme (`26.52 A`, `rel_sasa = 0.32`), `R343G` occurs at a conserved CYP2D-family position (`0.439` bits). This is noted solely as a structural observation and does not alter its CPIC uncertain-function classification.
+- **Population & scope takeaway:** In the SG10K_Health Indian cohort (`N = 328`), major clinically actionable reduced- and no-function alleles include non-mappable splicing and deletion variants—`*41` (`12.20%`), `*4` (`6.40%`), and `*5` (`6.10%`)—confirming why structural missense atlases must be paired with explicit documentation of non-mappable alleles (`data/processed/variants_not_mappable.csv`).
+- **Statistical caveat:** Sample sizes per CPIC class (`n = 1` to `6`) are intentionally small in this curated atlas; findings are reported descriptively using medians and ranges without underpowered hypothesis testing.
